@@ -1,21 +1,33 @@
 /* Estilos globais para centralizar todo o conteúdo */
-body, 
-html {
+body, html {
   height: 100%;
   margin: 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #c9c2ff;
+  /* Minhas alterações */
+  background-image: url('assets/Fundo branco.jpg');
+  background-repeat: no-repeat;
+  background-size: cover; /* ou 'contain', dependendo do efeito desejado */
+  background-position: center center;
+  /* finalização dessas alterações */
   font-family: Helvetica;
   text-align: center;
+
+}
+
+/* Minha alteração */
+body {
+  background-color: rgba(255, 255, 255, 0); 
 }
 
 /* Estilo para cada quadrado */
 .square {
   width: 100px;
   height: 100px;
+  /*Alteração de cor*/
   background-color: #b2a2ef;
+  /* finalização da alteração */
   border: 1px solid #000000;
   font-size: 32px;
   font-weight: bold;
@@ -26,6 +38,7 @@ html {
 
 /* Estilo para o vencedor */
 .winner {
+  /*Alteração de cor*/
   background-color: #b785f8;
 }
 
@@ -42,7 +55,9 @@ html {
   margin-top: 20px;
   padding: 10px 20px;
   font-size: 18px;
+  /*Alteração de cor*/
   background-color: #7a2ded;
+  /* finalização da alteração */
   color: #ffffff;
   border: none;
   border-radius: 4px;
@@ -51,5 +66,6 @@ html {
 
 /* Estilo para o botão de reiniciar no hover */
 .reset-button:hover {
-  background-color: #4a2397;
+  /*Alteração de cor*/
+  background-color: #533295;
 }
